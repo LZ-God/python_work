@@ -41,6 +41,8 @@ class Pvz1:
             self.pea_shooter.move_right=True
          elif event.key==pygame.K_LEFT:
             self.pea_shooter.move_left=True
+         elif event.key==pygame.K_ESCAPE:
+             sys.exit()
 
     def _check_keyup(self,event):
         """响应把键抬起"""
